@@ -1,5 +1,5 @@
 # qiime_pipe
-Pipeline for analysis of 16S rRNA metagenomic samples using QIIME
+##Pipeline for analysis of 16S rRNA metagenomic samples using QIIME
 
 This pipeline merges and filters paired-end Illumina 16S rRNA sequences and then executes QIIME to cluster OTUs using the open reference OTU picking algorithm.  
 
