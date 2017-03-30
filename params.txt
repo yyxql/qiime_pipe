@@ -1,0 +1,22 @@
+# Parameters for QIIME pipeline
+#
+# Global variables
+RAW_SEQPATH=""		# Path to raw fastq.gz files for processing
+SEQ_PATH=""		# Path to output quality filtered fastq.gz 
+
+PRIMER_F="^GTGYCAGCMGCCGCGGTA"		# Forward primer sequence. ^ indicates primer is anchored to 5' end after merging paired-end reads
+PRIMER_R="GGACTACHVGGGTWTCTAAT$"	# Reverse primer sequence. $ indicates primer is anchored to 3' end after merging paired-end reads
+READF_ID="_R1"				# String indicating how read 1 is identified in the fastq filename 
+READR_ID="_R2"				# String indicating how read 2 is identified in the fastq filename 
+ERROR_RATE=0				# Error rate tolerated in primer sequence 
+MAXEE=1					# Maximum USEARCH expected error rate before discarding sequence
+TRUNC=3					# Minimum Illumina quality score before truncating read
+MINLENGTH=200				# Minimum length of merged sequences allowed
+SUBSAMPLE=-9				# Number of reads to subsample before OTU picking. Set to -9 to disable.
+
+QIIME_PARAM="${PWD}/qiime_params.txt"	# Path to Qiime parameters file (required).
+QIIME_OUTDIR="${PWD}/qiime"		# Path to output Qiime analysis
+CPU=3					# Number of CPU threads to use for OTU picking
+
+CORESET="${PWD}/rdp_gold.fa.gz"		# Set of reference OTUs for Chimeraslayer
+
