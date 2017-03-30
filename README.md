@@ -1,5 +1,5 @@
 # qiime_pipe
-##Pipeline for analysis of 16S rRNA metagenomic samples using QIIME
+## Pipeline for analysis of 16S rRNA metagenomic samples using QIIME
 
 This pipeline merges and filters paired-end Illumina 16S rRNA sequences and then executes QIIME to cluster OTUs using the open reference OTU picking algorithm.  
 
@@ -32,5 +32,7 @@ chimera_stats.csv		breakdown of chimeric reads for each sample
 
 ## References
 Caporaso JG, Kuczynski J, Stombaugh J et al. (2010) QIIME allows analysis of high-throughput community sequencing data. Nature Methods, 7, 335–336.
+
 Edgar RC, Flyvbjerg H (2015) Error filtering, pair assembly and error correction for next-generation sequencing reads. Bioinformatics, 31, 3476–3482.
+
 Sodergren E, al  et (2011) Chimeric 16S rRNA sequence formation and detection in Sanger and 454-pyrosequenced PCR amplicons. Genome Research, 21.
